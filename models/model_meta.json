@@ -1,0 +1,81 @@
+{
+  "model_results": {
+    "Ridge Regression (baseline)": {
+      "RMSE": 22820.02,
+      "MAE": 11586.54,
+      "R2": 0.2925
+    },
+    "Random Forest": {
+      "RMSE": 10721.1,
+      "MAE": 6173.77,
+      "R2": 0.8438
+    },
+    "XGBoost (tuned)": {
+      "RMSE": 10767.13,
+      "MAE": 6183.66,
+      "R2": 0.8425
+    }
+  },
+  "num_cols": [
+    "year",
+    "age_years",
+    "mileage_km",
+    "num_owners",
+    "accident_history",
+    "service_records",
+    "engine_size_L",
+    "horsepower",
+    "battery_range_km",
+    "battery_health_pct",
+    "charging_speed_kw",
+    "ev_incentive_2026_usd",
+    "is_ev",
+    "ev_score",
+    "luxury_flag",
+    "power_density",
+    "cond_score",
+    "age_mileage"
+  ],
+  "cat_cols": [
+    "brand",
+    "fuel_type",
+    "transmission",
+    "body_type",
+    "condition",
+    "color"
+  ],
+  "features": [
+    "brand",
+    "year",
+    "age_years",
+    "mileage_km",
+    "fuel_type",
+    "transmission",
+    "body_type",
+    "condition",
+    "color",
+    "num_owners",
+    "accident_history",
+    "service_records",
+    "engine_size_L",
+    "horsepower",
+    "battery_range_km",
+    "battery_health_pct",
+    "charging_speed_kw",
+    "ev_incentive_2026_usd",
+    "is_ev",
+    "ev_score",
+    "luxury_flag",
+    "power_density",
+    "cond_score",
+    "age_mileage"
+  ],
+  "target": "price_usd",
+  "xgb_best_params": {
+    "model__colsample_bytree": 0.8,
+    "model__learning_rate": 0.05,
+    "model__max_depth": 6,
+    "model__n_estimators": 400,
+    "model__subsample": 0.8
+  }
+}
